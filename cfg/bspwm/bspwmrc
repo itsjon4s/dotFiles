@@ -5,6 +5,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 xrandr --output HDMI1 --primary &
 xrandr -s 1920x1080
+xrandr --output HDMI1 --auto --rotate normal --pos 0x0 --output eDP1 --auto --rotate normal --left-of HDMI1
 bspc monitor HDMI1 -d I II III IV V VI
  
 #bspc monitor -d I II III IV 
